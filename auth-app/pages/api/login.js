@@ -16,7 +16,7 @@ async function handler(req,res){
 
     }
 
-    // now here jwt signs the address (encoded it) 
+    // now here jwt signs the address (encoded it) ))
     const token =  jwt.sign({address}, secretKey,{expiresIn:'10m'});
     res.status(200).json({token});
 
