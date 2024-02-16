@@ -1,0 +1,114 @@
+/* body {
+background: #676767;
+} */
+.container3{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background-color: transparent;
+  width: 37em;
+  height: auto; /* Set the height to auto to adapt to content */
+  margin: 0 auto; /* Center horizontally */
+  justify-content: space-around;
+}
+
+/* Rest of your CSS remains the same */
+
+.headerM {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+
+}
+
+.textM {
+  color:black;
+  font-size: 49px;
+  font-weight: 700;
+}
+.underline {
+  width: 61px;
+  height: 6px;
+  background: black;
+  border-radius: 9px;
+}
+.inputsM {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.inputM {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #eaeaea;
+  border-radius: 6px;  
+}
+.headerM img{
+  margin: 0px 30px;
+  width: 55px;
+  height: 55px;
+}
+.content {
+  margin: 0px 20px;
+  width: 22px;
+  height: 20px;
+}
+.inputM input{
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+
+.forgotPasswordd {
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+.forgotPassword span {
+  color: purple;
+  cursor: pointer;
+}
+.submitContainer {
+  display: flex;
+  gap: 30px;
+  margin: 60px auto;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background:black;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  border:none;
+  
+}
+.error-message{
+  color:#fff;
+}
+.gray{
+  background: #EAEAEA;
+  color: #676767;
+}

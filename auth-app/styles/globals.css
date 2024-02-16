@@ -1,0 +1,75 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+:root {
+    --clr-white: #FFFFFF;
+    --clr-black: #000000;
+    --clr-grey: #707070;
+    --clr-bunker: #131921;
+    --clr-ebony-clay: #232f3e;
+  
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("../pages/Assets/1267597\ \(1\).jpg");
+    background-size: cover;
+  }  
+  
+  /* -- NAVIGATION -- */
+  *,
+  *::after,
+  *::before {
+    margin: 15px 0px ;
+    margin-bottom: 10px;
+ 
+    /* margin: 0; */
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 70%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  li {
+    list-style: none;
+  } 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav {
+
+    display: flex;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-radius: 20px; */
+    border:1px 0px solid rgba(255, 255, 255, 0.18); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    /* background: rgb(0, 42, 70); */
+    /* background: black; */
+  
+  /* this is to make the nav bar transparant */
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+    background-color: transparent;
+  }
+  
+  
+  

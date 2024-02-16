@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.0;
+
+contract IPFShashStorage {
+    //defines file structure using struct to store metadata
+    struct File {
+        string fileName;
+        string ipfsHash;
+    }
+    //File is private variable only made for contracts access
+    mapping(string => File) private files;
+
+    //first check if the given filename from the api already exists or not
+    function upload (string memory fileName, string memory ipfsHash) public {
+        require(bytes(files[fileName].ipfsHash).length == 0, "File already exsits");
+        files[fileName] = File(fileName, ipfsHash); //file not found creates a place in the hash table
+    }
+
+    //getting ur hash code from the blockchain 
+    function getIPFSHash(string memory fileName) public view returns (string memory) {
+        require(bytes(files[fileName].ipfsHash).length > 0, "File not found");
+        return files[fileName].ipfsHash;
+    }
+    //checking with the name if the file exists
+    function isFileStored(string memory fileName) public view returns(bool) {
+        return bytes(files[fileName].ipfsHash).length > 0;
+    }
+}
